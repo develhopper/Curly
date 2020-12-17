@@ -39,6 +39,7 @@ class Curly{
         curl_setopt_array($this->handler,$this->options);
         $result=curl_exec($this->handler);
         curl_close($this->handler);
+		return $result;
     }
 
 }
